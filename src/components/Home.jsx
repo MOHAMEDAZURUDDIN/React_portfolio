@@ -1,26 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import lottie from "lottie-web/light";
 import { TiArrowRightOutline } from "react-icons/ti";
 import { Link } from "react-scroll";
-import animationData from "../assets/animation.json";
+import profileImage from "../assets/heroImage1.jpg"; 
 
 const Home = () => {
-  const animationContainer = useRef(null);
-
-  useEffect(() => {
-    if (animationContainer.current) {
-      const anim = lottie.loadAnimation({
-        container: animationContainer.current,
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-      });
-      return () => anim.destroy(); // Cleanup on unmount
-    }
-  }, []);
-
   const getGreeting = () => {
     try {
       const hour = new Date().getHours();
@@ -39,6 +23,7 @@ const Home = () => {
       className="h-screen bg-gradient-to-b from-black via-black to-gray-900 text-white"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-center h-full px-4">
+        {/* Left Section: Text Content */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -70,15 +55,21 @@ const Home = () => {
           </div>
         </motion.div>
 
+        {/* Right Section: Static Image */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
           className="mb-8 md:w-1/2 animate-scaleIn"
         >
-          <div ref={animationContainer} style={{ maxWidth: "100%", height: "auto" }} />
+          <img
+            src={profileImage}
+            alt="Azar, React Full Stack Developer"
+            style={{ maxWidth: "100%", height: "auto", borderRadius: "10px" }}
+            className="w-full max-w-[400px]"
+          />
           <p className="sr-only">
-            Interactive animation showcasing my skills and creativity.
+            Profile image showcasing my professional identity.
           </p>
         </motion.div>
       </div>
