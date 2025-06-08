@@ -12,7 +12,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/mohammad-azaruddin-747549268/",
+      href: "https://www.linkedin.com/in/azaruddin7/",
       style: "rounded-tr-md",
     },
     {
@@ -22,7 +22,7 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/MohamedAzaruddinTH",
+      href: "https://github.com/MOHAMEDAZURUDDIN",
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const SocialLinks = () => {
         </>
       ),
       style: "rounded-br-md",
-      href: "/resume.pdf",
+      href: "/MernStack_Azar_dev7.pdf",
       download: true,
     },
   ];
