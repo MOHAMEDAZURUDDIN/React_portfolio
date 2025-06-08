@@ -6,6 +6,7 @@ import nikey from "../assets/videos/nikey.mp4";
 import clickcrazy from "../assets/portfolio/ClickCrazy.png";
 import littleLooms from "../assets/portfolio/Little-looms.png";
 import urbantrends from "../assets/portfolio/urbanTrends.png";
+import pulsecore from "../assets/portfolio/pulsecore.png";
 import ClickCrazy from "../assets/videos/ClickCrazyh.mp4";
 import ReelFlicks from "../assets/portfolio/ReelFlicks.png";
 import reelFlicks from "../assets/videos/ReelFlickz.mp4";
@@ -25,44 +26,48 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: littleLooms,
+      src: pulsecore,
     },
     {
       id: 2,
+      src: littleLooms,
+    },
+    {
+      id: 3,
       src: clickcrazy,
       video: ClickCrazy,
       codeLink: "https://github.com/MohamedAzaruddinTH/ClickCrazyh",
     },
     {
-      id: 3,
+      id: 4,
       src: urbantrends,
     },
     {
-      id: 4,
+      id: 5,
       src: nike,
       video: nikey,
       codeLink: "https://github.com/MohamedAzaruddinTH/Nike-store-AjSTACK",
     },
     {
-      id: 5,
+      id: 6,
       src: ReelFlicks,
       video: reelFlicks,
       codeLink: "https://github.com/MohamedAzaruddinTH/ReelFlicks",
     },
     {
-      id: 6,
+      id: 7,
       src: fitness,
       video: Fitness,
       codeLink: "https://github.com/MohamedAzaruddinTH/Fitness",
     },
     {
-      id: 7,
+      id: 8,
       src: rcpe,
       video: Recipe,
       codeLink: "https://github.com/MohamedAzaruddinTH/Recipe",
     },
     {
-      id: 8,
+      id: 9,
       src: weather,
       video: Weather,
       codeLink: "https://github.com/MohamedAzaruddinTH/Weather_App",
